@@ -1,0 +1,21 @@
+#本地
+server:
+    address: 192.168.1.11
+    port: 9096
+    servlet-path: /
+    tomcat:
+      maxThreads: 500
+
+#redis
+spring:
+  redis:
+    host: 192.168.1.246
+    port: 6379
+    password:
+    database: 1
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 500
+      min-idle: 0
+      timeout: 1000
